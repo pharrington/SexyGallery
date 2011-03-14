@@ -1,0 +1,88 @@
+html, body, div, ul, li, p, img, h1, h2, h3, h4, h5, h6 {
+	position: relative;
+	margin: 0;
+	border: 0;
+	padding: 0;
+}
+
+body {
+	font-family: helvetica, verdana, sans;
+	overflow: hidden;
+	background: #111;
+}
+
+#gallery {
+	margin: 200px;
+	position: absolute;
+	width: 2568px;
+}
+
+ul {
+	list-style-type: none;
+}
+
+li {
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 1px;
+	margin-bottom: 1px;
+	background: #000;
+	height: 240px;
+	width: 320px;
+	cursor: pointer;
+}
+
+li a {
+	height: 160px;
+	width: 240px;
+	overflow: hidden;
+	display: block;
+	margin: 40px auto;
+}
+
+li img {
+	z-index: 20;
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.left, .right {
+	position: absolute;
+	top: 43%;
+	width: 40px;
+	height: 70px;
+	background-color: rgba(0, 0, 0, .7);
+	background-repeat: no-repeat;
+	cursor: pointer;
+	z-index: 1050;
+}
+
+.left {
+	left: 0;
+	background-image: url("left.gif");
+	background-position: 6px 9px;
+	border-radius: 0 10px 10px 0;
+}
+
+.right {
+	right: 0;
+	background-image: url("right.gif");
+	background-position: 9px 9px;
+	border-radius: 10px 0 0 10px;
+}
+
+.overlay {
+	position: absolute;
+	opacity: 0;
+	z-index: 50;
+	left: 0;
+	top: 0;
+}
+
+.hidden {
+	display: none;
+}
